@@ -23,7 +23,7 @@
         <div class="container">
             <div class="sidebar">
                 <ul>
-                    <li><a href="#">chevron menu</a></li>
+                    <li><a href="#chevron-menu">chevron menu</a></li>
                     <li><a href="#">dropdown menu</a></li>
                     <li><a href="#">modal box</a></li>
                     <li><a href="#">allerts</a></li>
@@ -31,20 +31,116 @@
             </div>
             <main class="main">
                 <div class="title">
-                    <h2>Chevron menu</h2>
+                    <h2 id="chevron-menu">Chevron menu</h2>
                 </div>
                 <section class="section">
-                    <div class="small-boxes">
-                        <div class="small-box text">
-
+                    <div class="box big-box ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path fill="#FFC806" fill-rule="evenodd"
+                                d="M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11zm1 0c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zM9.259 15.433c-.075.338-.113.584-.113.74 0 .445.138.776.413.995.281.212.597.318.947.318.618 0 1.2-.262 1.743-.787.332-.319.81-.938 1.435-1.857l-.422-.271c-.219.362-.472.709-.76 1.04-.287.332-.528.497-.721.497-.075 0-.144-.019-.207-.056-.062-.044-.093-.134-.093-.272 0-.137.056-.438.168-.9.044-.181.129-.506.254-.975l1.49-5.466-.825.16c-.287.056-.778.125-1.472.206-.687.075-1.212.125-1.575.15v.506c.431.019.728.06.89.122.163.063.245.222.245.478 0 .044-.007.09-.02.14-.005.05-.015.1-.027.15l-1.153 4.313c-.088.32-.154.575-.197.77zm4.51-10.903c-.25-.25-.554-.375-.91-.375-.357 0-.663.125-.919.375-.25.25-.375.553-.375.91 0 .356.125.662.375.918.256.25.563.375.919.375.356 0 .66-.125.91-.375.25-.256.374-.562.374-.919 0-.356-.125-.659-.375-.909z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <div class="info">
+                            <p>Possible to use on gradient background</p>
+                            <p>Easy to use opacity for items background</p>
+                            <p>Cross-browser</p>
                         </div>
-
                     </div>
-                    <div class="big-boxes">
-                        <div class="big-box text"></div>
-                        <div class="big-box text"></div>
+                    <div class="chevron-menu">
+                        <nav class="chevron-menu-nav ">
+                            <ul class="chevron-menu-nav-list">
+                                <li class="chevron-menu-nav-item">
+                                    <a href="#">about</a>
+                                </li>
+                                <li class="chevron-menu-nav-item">
+                                    <a href="#">careers</a>
+                                </li>
+                                <li class="chevron-menu-nav-item">
+                                    <a href="#">faq</a>
+                                </li>
+                                <li class="chevron-menu-nav-item">
+                                    <a href="#">contact</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-
+                    <div class="box big-box white-box">
+                        <pre class="code outline outline-html"><code >&lt;ul class=&quot;chevron-menu-nav-list&quot;&gt;
+    &lt;li class=&quot;chevron-menu-nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;about&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;chevron-menu-nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;careers&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;chevron-menu-nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;faq&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;chevron-menu-nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;contact&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+                    <div class="box big-box white-box">
+                        <pre class="code outline outline-css"><code>.chevron-menu-nav {
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+    padding: 2px 35px 2px 60px;
+}
+.chevron-menu-nav-list {
+    text-align: right;
+    overflow: hidden;
+}
+.chevron-menu-nav-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px 0 0;
+    position: relative;
+}
+.chevron-menu-nav-item a {
+    color: #000;
+    background:rgb(255,255,255, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 37px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 25px 29px 25px;
+    display: inline-block;
+    position: relative;
+}
+.chevron-menu-nav-item a:after {
+    content: &quot;&quot;;
+    display: block;
+    position: absolute;
+    right: -25px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 48px 0 48px 25px;
+    border-color: transparent transparent transparent rgb(255,255,255, 1);
+}
+.chevron-menu-nav-item a:before {
+    content: &quot;&quot;;
+    display: block;
+    position: absolute;
+    top:0;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 48px 0 48px 25px;
+    border-color: rgb(255,255,255,1) rgb(255,255,255, 1) rgb(255,255,255, 1) transparent;
+}
+.chevron-menu-nav-item:hover a{
+    background:rgb(255,255,255, 0.7);
+}
+.chevron-menu-nav-item:hover a:after {
+    border-color: transparent transparent transparent rgb(255,255,255, 0.7);
+}
+.chevron-menu-nav-item:hover a:before {
+    border-color: rgb(255,255,255, 0.7) rgb(255,255,255,0.7) rgb(255,255,255,0.7) transparent;
+}</code></pre>
+                    </div>
                 </section>
             </main>
         </div>
