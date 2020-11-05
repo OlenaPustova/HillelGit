@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --main-color: #6a75ca;
+    --secondary-color: #fff;
+}
+
+/* project styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -26,11 +33,10 @@ body {
     flex: 0 0 240px;
     text-transform: uppercase;
     padding: 24px 48px;
-    
 }
 .logo a {
     text-decoration: none;
-    color:#6a75ca;
+    color: var(--main-color);
 }
 .logo a:hover {
     color: #8792e7;
@@ -55,14 +61,14 @@ body {
     text-decoration-line: underline;
 }
 .nav .active-page {
-    color: #6a75ca;
+    color: var(--main-color);
 }
 .container {
     display: flex;
     flex-grow: 1;
 }
 .sidebar {
-    background: #6a75ca;
+    background: var(--main-color);
     flex: 0 0 240px;
     text-transform: uppercase;
     padding: 32px 32px 48px 48px;
@@ -76,11 +82,11 @@ body {
 .sidebar a {
     line-height: 2;
     text-decoration: none;
-    color: #fff;
+    color:  var(--secondary-color);
 }
 .sidebar li:hover {
     list-style-type: disc;
-    color: #fff;
+    color:  var(--secondary-color);
 }
 .main {
     flex-grow: 1;
@@ -93,7 +99,6 @@ body {
     flex-direction: column;
     /* justify-content: center; */
 }
-
 .main-title {
     padding: 100px 0;
     font-size: 54px;
@@ -113,15 +118,15 @@ body {
 }
 .box {
     height: 240px;
-    background: #6a75ca;
-    color: #fff;
+    background: var(--main-color);
+    color:  var(--secondary-color);
     padding: 32px;
     border-radius: 8px;
     /* clip-path: polygon(0% 0%, 75% 0, 100% 25%, 100% 100%, 0% 100%); */
     /* font-family: 'Courier New', Courier, monospace; */
     line-height: 1.31;
     /* position: relative; */
-    /* background: linear-gradient(-135deg, transparent 40px,  #6a75ca 0); */
+    /* background: linear-gradient(-135deg, transparent 40px, var(--main-color) 0); */
     opacity: 1;
     position: relative;
     
@@ -137,7 +142,6 @@ body {
     border: 1px solid #4f58b2;
     border-radius: 8px;
 }
-
 .outline-html:before {
     content: "HTML";
     position: absolute;
@@ -160,10 +164,8 @@ body {
     text-align: center;
 }
 
-
 .code  code {
     font-family: 'Courier New', Courier, monospace;
-
 }
 .shadow {
     box-shadow: 0 4px 10px 0 rgba(79, 88, 178, 0.25); /* тень не работает когда отрезается угол*/
@@ -183,7 +185,7 @@ body {
     flex: 0 0 100%;
 }
 .white-box {
-    background-color: #fff;
+    background-color:  var(--secondary-color);
     color: #7d868e;
 }
 .title h2{
