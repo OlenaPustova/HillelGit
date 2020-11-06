@@ -11,23 +11,23 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="logo"><a href="index.html">mylib</a></div>
+            <div class="logo"><a class="logo-link" href="index.html">mylib</a></div>
             <ul class="nav">
-                <li><a href="#" class="active-page">Elements</a></li>
-                <li><a href="components.html">Components</a></li>
-                <li><a href="#">Layouts</a></li>
-                <li><a href="#">Drafts</a></li>
-                <li><a href="#">Documentation</a></li>
+                <li class="nav-item"><a class="nav-link active-page" href="#">Elements</a></li>
+                <li class="nav-item"><a class="nav-link" href="components.html">Components</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Drafts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Documentation</a></li>
             </ul>
         </header>
         <div class="container">
             <div class="sidebar">
                 <ul>
-                    <li><a href="#typography">Typography</a></li>
-                    <li><a href="#">buttons</a></li>
-                    <li><a href="#">Form elements</a></li>
-                    <li><a href="#">tables</a></li>
-                    <li><a href="#">tooltips</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="#typography">Typography</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">buttons</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">Form elements</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">tables</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="#">tooltips</a></li>
                 </ul>
             </div>
             <main class="main">
@@ -59,7 +59,7 @@
                         <h6 class=”h6”>Headline h6</h6>
                     </div>
                     <div class="big-boxes ">
-                        <div class="box big-box white-box ">
+                        <div class="box big-box white-box code-box">
                             <pre class="code outline outline-html"><code>&lt;h1 class=”h1”&gt;Headline h1&lt;/h1&gt;
 &lt;h2 class=”h2”&gt;Headline h2&lt;/h2&gt;
 &lt;h3 class=”h3”&gt;Headline h3&lt;/h3&gt;
@@ -67,7 +67,7 @@
 &lt;h5 class=”h5”&gt;Headline h5&lt;/h5&gt;
 &lt;h6 class=”h6”&gt;Headline h6&lt;/h6&gt;</code></pre>
                         </div>
-                        <div class="box big-box white-box outline">
+                        <div class="box big-box white-box outline code-box">
                             <pre class="code outline outline-css"><code>h1, .h1 {
     font-size: 54px;
     line-height: 63px;
