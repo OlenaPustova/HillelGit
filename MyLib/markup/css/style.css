@@ -204,9 +204,12 @@ body {
 .info {
     margin-left: 32px;
 }
-/* .corner {
+.corner-white {
     background:  linear-gradient(-135deg, transparent 35px, var(--secondary-color) 0) top right;
-} */
+}
+.corner-info {
+    background:  linear-gradient(-135deg, transparent 35px, var(--main-color) 0) top right;
+}
 .headings {
     margin-bottom: 15px;
     border-bottom: 1px solid var(--dark-color);
