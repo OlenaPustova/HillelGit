@@ -10,6 +10,7 @@
     --dark-color: #131320;
     --bg-color: #eff2f8;
     --text-color-code: #7d868e;
+    --hover-color: #5f68ad;
     --shadow-color: rgba(79, 88, 178, 0.25);
     --chevron-item-color: rgb(255,255,255, 1);
     --chevron-item-hover-color: rgb(255,255,255, 0.7);
@@ -44,13 +45,20 @@ body {
     flex: 0 0 240px;
     text-transform: uppercase;
     padding: 24px 48px;
+    transition: transform .3s ease-in-out;
 }
 .logo-link {
     text-decoration: none;
     color: var(--main-color);
+    transition: .3s ease-in-out;
 }
 .logo-link:hover {
-    color: #8792e7;
+    color: var(--hover-color);
+    transition: .3s ease-in-out;
+}
+.logo:hover {
+    transition: transform .3s ease-in-out;
+    transform: scale(1.1);
 }
 
 /* navigation */
@@ -76,7 +84,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: #5f68ad;
+    background: var(--hover-color);
     transition: width .3s;
 }
 .nav-link:hover::after {
@@ -84,7 +92,7 @@ body {
     transition: width .3s;
 }
 .nav-link:hover {
-    color: #5f68ad;
+    color: var(--hover-color);
     transition: all .3s ease-out;
 }
 .active-page {
