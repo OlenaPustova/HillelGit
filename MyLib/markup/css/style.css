@@ -29,6 +29,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* header */
 .header {
     display: flex;
     font-weight: bold;
@@ -50,6 +52,8 @@ body {
 .logo-link:hover {
     color: #8792e7;
 }
+
+/* navigation */
 .nav {
     display: flex;
     flex-grow: 1;
@@ -64,10 +68,24 @@ body {
     text-decoration: none;
     margin-right: 45px;
     color: var( --dark-color);
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #5f68ad;
+    transition: width .3s;
+}
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
 }
 .nav-link:hover {
     color: #5f68ad;
-    text-decoration-line: underline;
+    transition: all .3s ease-out;
 }
 .active-page {
     color: var(--main-color);
@@ -76,6 +94,8 @@ body {
     display: flex;
     flex-grow: 1;
 }
+
+/* sidebar */
 .sidebar {
     background: var(--main-color);
     flex: 0 0 240px;
@@ -89,14 +109,29 @@ body {
     list-style-type: none;
 }
 .sidebar-link {
+    display: inline-block;
     line-height: 2;
     text-decoration: none;
     color:  var(--secondary-color);
+}
+.sidebar-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: width .3s;
+}
+.sidebar-link:hover::after {
+    width: 100%;
+    transition: width .3s;
 }
 .sidebar-item:hover {
     list-style-type: disc;
     color:  var(--secondary-color);
 }
+
+/* main section */
 .main {
     flex-grow: 1;
     background-color: var(--bg-color);
@@ -120,6 +155,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+/* boxes */
 .box {
     height: 240px;
     background: var(--main-color);
@@ -129,11 +166,6 @@ body {
     line-height: 1.31;
     opacity: 1;
     position: relative;
-}
-
-
-.code  code {
-    font-family: 'Courier New', Courier, monospace;
 }
 .shadow {
     box-shadow: 0 4px 10px 0 var(--shadow-color); /* тень не работает когда отрезается угол*/
@@ -151,10 +183,6 @@ body {
     background-color:  var(--secondary-color);
     color: var(--text-color-code);
 }
-.title h2{
-    border-bottom: 1px solid var(--dark-color);
-    padding: 24px 48px;
-}
 .section {
     padding: 24px 48px;
 }
@@ -163,8 +191,12 @@ body {
     display: flex;
     align-items: center;
 }
+.code  code {
+    font-family: 'Courier New', Courier, monospace;
+}
 .code-box{
     margin: 0 16px 67px;
+    padding: 48px;
 }
 .info {
     margin-left: 32px;
@@ -175,6 +207,13 @@ body {
 .corner-info {
     background:  linear-gradient(-135deg, transparent 35px, var(--main-color) 0) top right;
 }
+.title h2{
+    border-bottom: 1px solid var(--dark-color);
+    font-size: 36px;
+    padding: 24px 48px;
+}
+
+/* outline */
 .outline:after {
     content: "";
     position: absolute;
@@ -207,9 +246,8 @@ body {
     text-align: center;
 }
 
-/* headline */
+/* examples */
 .headings {
-    /* margin-bottom: 15px; */
     border-bottom: 1px solid var(--dark-color);
 }
 .headings h3{
@@ -241,11 +279,11 @@ body {
     margin-bottom: 21px;
 }
 .example h5, .h5 {
-    line-height: 1.31;
+    line-height: 21px;
     margin-bottom: 21px;
 }
 .example h6, .h6 {
-    line-height: 1.31;
+    line-height: 11px;
 }
 
 /* chevron-menu */
