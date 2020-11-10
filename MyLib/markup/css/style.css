@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --main-color: #6a75ca;
     --secondary-color: #fff;
@@ -12,14 +11,15 @@
     --text-color-code: #7d868e;
     --hover-color: #5f68ad;
     --shadow-color: rgba(79, 88, 178, 0.25);
-    --chevron-item-color: rgb(255,255,255, 1);
-    --chevron-item-hover-color: rgb(255,255,255, 0.7);
+    --chevron-item-color: rgb(255, 255, 255, 1);
+    --chevron-item-hover-color: rgb(255, 255, 255, 0.7);
     --chevron-text-color: rgb(45, 47, 77);
     --chevron-gradient-from: #6a75ca;
-    --chevron-gradient-to:  rgba(166, 172, 250, 0.082);
+    --chevron-gradient-to: rgba(166, 172, 250, 0.082);
 }
 
 /* project styles */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -32,6 +32,7 @@ body {
 }
 
 /* header */
+
 .header {
     display: flex;
     font-weight: bold;
@@ -45,23 +46,24 @@ body {
     flex: 0 0 240px;
     text-transform: uppercase;
     padding: 24px 48px;
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 .logo-link {
     text-decoration: none;
     color: var(--main-color);
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .logo-link:hover {
     color: var(--hover-color);
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .logo:hover {
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     transform: scale(1.1);
 }
 
 /* navigation */
+
 .nav {
     display: flex;
     flex-grow: 1;
@@ -75,9 +77,9 @@ body {
     line-height: 2;
     text-decoration: none;
     margin-right: 45px;
-    color: var( --dark-color);
+    color: var(--dark-color);
     display: inline-block;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .nav-link::after {
     content: "";
@@ -85,15 +87,15 @@ body {
     width: 0;
     height: 2px;
     background: var(--hover-color);
-    transition: width .3s;
+    transition: width 0.3s;
 }
 .nav-link:hover::after {
     width: 100%;
-    transition: width .3s;
+    transition: width 0.3s;
 }
 .nav-link:hover {
     color: var(--hover-color);
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
 }
 .active-page {
     color: var(--main-color);
@@ -104,6 +106,7 @@ body {
 }
 
 /* sidebar */
+
 .sidebar {
     background: var(--main-color);
     flex: 0 0 240px;
@@ -120,7 +123,7 @@ body {
     display: inline-block;
     line-height: 2;
     text-decoration: none;
-    color:  var(--secondary-color);
+    color: var(--secondary-color);
 }
 .sidebar-link::after {
     content: "";
@@ -128,18 +131,19 @@ body {
     width: 0;
     height: 2px;
     background: var(--secondary-color);
-    transition: width .3s;
+    transition: width 0.3s;
 }
 .sidebar-link:hover::after {
     width: 100%;
-    transition: width .3s;
+    transition: width 0.3s;
 }
 .sidebar-item:hover {
     list-style-type: disc;
-    color:  var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 /* main section */
+
 .main {
     flex-grow: 1;
     background-color: var(--bg-color);
@@ -153,7 +157,7 @@ body {
 .main-title {
     padding: 100px 0;
     font-size: 54px;
-    color: var( --dark-color);
+    color: var(--dark-color);
     line-height: 1.17;
 }
 .main-section {
@@ -165,10 +169,11 @@ body {
 }
 
 /* boxes */
+
 .box {
     height: 240px;
     background: var(--main-color);
-    color:  var(--secondary-color);
+    color: var(--secondary-color);
     padding: 32px;
     border-radius: 8px;
     line-height: 1.31;
@@ -176,7 +181,7 @@ body {
     position: relative;
 }
 .shadow {
-    box-shadow: 0 4px 10px 0 var(--shadow-color); /* тень не работает когда отрезается угол*/
+    box-shadow: 0 4px 10px 0 var(--shadow-color);
     z-index: 1;
 }
 .small-box {
@@ -188,7 +193,7 @@ body {
     flex: 0 0 100%;
 }
 .white-box {
-    background-color:  var(--secondary-color);
+    background-color: var(--secondary-color);
     color: var(--text-color-code);
 }
 .section {
@@ -199,10 +204,10 @@ body {
     display: flex;
     align-items: center;
 }
-.code  code {
-    font-family: 'Courier New', Courier, monospace;
+.code code {
+    font-family: "Courier New", Courier, monospace;
 }
-.code-box{
+.code-box {
     margin: 0 16px 67px;
     padding: 48px;
 }
@@ -210,18 +215,19 @@ body {
     margin-left: 32px;
 }
 .corner-white {
-    background:  linear-gradient(-135deg, transparent 35px, var(--secondary-color) 0) top right;
+    background: linear-gradient( -135deg, transparent 35px, var(--secondary-color) 0) top right;
 }
 .corner-info {
-    background:  linear-gradient(-135deg, transparent 35px, var(--main-color) 0) top right;
+    background: linear-gradient(-135deg, transparent 35px, var(--main-color) 0) top right;
 }
-.title h2{
+.title h2 {
     border-bottom: 1px solid var(--dark-color);
     font-size: 36px;
     padding: 24px 48px;
 }
 
 /* outline */
+
 .outline:after {
     content: "";
     position: absolute;
@@ -241,24 +247,24 @@ body {
     content: "CSS";
     position: absolute;
 }
-.outline-html:before, 
-.outline-css:before {
+.outline-html:before, .outline-css:before {
     z-index: 5;
     width: 49px;
     height: 20px;
     top: -24px;
     left: 6px;
-    font-size: 12px ;
+    font-size: 12px;
     color: #ffc806;
     background-color: var(--bg-color);
     text-align: center;
 }
 
 /* examples */
+
 .headings {
     border-bottom: 1px solid var(--dark-color);
 }
-.headings h3{
+.headings h3 {
     margin-bottom: 15px;
     text-transform: uppercase;
     font-size: 24px;
@@ -295,11 +301,12 @@ body {
 }
 
 /* chevron-menu */
+
 .chevron-menu {
     margin-bottom: 75px;
 }
 .chevron-menu-nav {
-    background: linear-gradient(90deg, var(--chevron-gradient-from) 0%, var(--chevron-gradient-to) 127.92%);
+    background: linear-gradient( 90deg, var(--chevron-gradient-from) 0%, var(--chevron-gradient-to) 127.92%);
     padding: 2px 35px 2px 60px;
 }
 .chevron-menu-nav-list {
@@ -340,7 +347,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    top:0;
+    top: 0;
     left: -25px;
     width: 0;
     height: 0;
@@ -348,7 +355,7 @@ body {
     border-width: 48px 0 48px 25px;
     border-color: var(--chevron-item-color) var(--chevron-item-color) var(--chevron-item-color) transparent;
 }
-.chevron-menu-nav-item:hover a{
+.chevron-menu-nav-item:hover a {
     background: var(--chevron-item-hover-color);
 }
 .chevron-menu-nav-item:hover a:after {
